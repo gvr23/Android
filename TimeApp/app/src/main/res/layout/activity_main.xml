@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dsbmobile.timeapp.MainActivity">
+
+
+    <SeekBar
+        android:id="@+id/seekBarTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/ivNegroCarl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/negrocarl"
+        android:layout_below="@+id/seekBarTimer"/>
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:text="0:30"
+        android:textSize="65sp"
+        android:layout_below="@+id/seekBarTimer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tvTime"
+        android:layout_alignEnd="@+id/tvTime"
+        android:text="Go!"/>
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:layout_alignBaseline="@+id/btnStart"
+        android:layout_alignBottom="@+id/btnStart"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnHide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hide"
+        android:layout_alignBaseline="@+id/btnShow"
+        android:layout_alignBottom="@+id/btnShow"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+
+</RelativeLayout>
