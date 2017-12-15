@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dsbmobile.com.app.hikers_watch.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/hikingimage"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hiker's Watch"
+        android:textSize="30sp"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/tvLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude: 12.23"
+        android:textSize="20sp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="80dp"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/tvLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude: 12.23"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="80dp"
+        android:layout_below="@id/tvLat"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
